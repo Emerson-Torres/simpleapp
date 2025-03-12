@@ -25,6 +25,7 @@ COPY docker/nginx/default.conf /etc/nginx/sites-available/default
 
 # Da permisos a los archivos
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+RUN chmod -R 755 /var/www/storage /var/www/bootstrap/cache
 
 # Expone los puertos para Nginx y PHP-FPM
 EXPOSE 80 9000
