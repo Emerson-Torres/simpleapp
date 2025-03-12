@@ -1,0 +1,117 @@
+#swal2-html-container{
+    overflow-x:hidden;
+
+}
+
+.product-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.product:last-child {
+    border-bottom: none;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.product-info {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.product-title {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.product-description {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.product-stock {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+
+.option-Claro {
+    background-color: #DA291C;
+    color: white;
+}
+
+.option-Movistar {
+    background-color: #5cb615;
+    color: white;
+}
+
+.option-Digicel {
+    background-color: #f3005a;
+    color: white;
+}
+
+.option-Tigo {
+    background-color: #00377b;
+    color: white;
+}
+
+option:hover {
+    background-color: gray;
+}
+
+
+#lblCarrito {
+    display: inline-block; /* Asegura que el ícono ocupe solo el espacio necesario */
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+#spinner2 {
+    display: inline-block; /* Mantiene el spinner en línea con el texto */
+    margin-left: 5px; /* Espacio entre el spinner y el texto */
+}
+
+#lblTotalCompraRecarga {
+    display: inline-block; /* Mantiene el texto en línea */
+}
+
+.bg-warning {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}

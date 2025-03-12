@@ -1,0 +1,81 @@
+
+
+.option-Claro {
+    background-color: #DA291C;
+    color: white;
+}
+
+.option-Movistar {
+    background-color: #5cb615;
+    color: white;
+}
+
+.option-Digicel {
+    background-color: #f3005a;
+    color: white;
+}
+
+.option-Tigo {
+    background-color: #00377b;
+    color: white;
+}
+
+option:hover {
+    background-color: gray;
+}
+
+.custom-card {
+    height: 100%;
+    background: linear-gradient(135deg, #ECEFF1, #CFD8DC);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+}
+
+h3.mt-1.text-center {
+    margin-bottom: 0.2rem;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #FFF;
+    color: #007bff;
+}
+
+.input-group-text {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+.form-control {
+    border: 2px solid #6c757d;
+}
+
+.form-control:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 5px rgba(108, 117, 125, 0.5);
+}
+
+.btn-primary {
+    background-color: #6c757d;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5a6268;
+}
+
+.tab-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+}
