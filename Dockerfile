@@ -1,7 +1,7 @@
 # Usa una imagen oficial de PHP con extensiones necesarias
 FROM php:8.1-fpm
 
-# Instala dependencias del sistema
+# Instala dependencias del sistema y Nginx
 RUN apt-get update && apt-get install -y \
     git \
     unzip \
@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
+    nginx \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install gd pdo pdo_mysql pdo_pgsql
 
@@ -19,8 +20,14 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www
 COPY . /var/www
 
+# Copia la configuración de Nginx
+COPY docker/nginx/default.conf /etc/nginx/sites-available/default
+
 # Da permisos a los archivos
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
-# Expone el puerto 80 para PHP-FPM
-EXPOSE 9000
+# Expone los puertos para Nginx y PHP-FPM
+EXPOSE 80 9000
+
+# Inicia Nginx y PHP-FPM
+CMD service nginx start && php-fpm
