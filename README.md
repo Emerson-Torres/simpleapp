@@ -64,3 +64,80 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Nombre del Proyecto
+
+SimpleApp
+
+## Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalado lo siguiente en tu máquina local:
+
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+- [Git](https://git-scm.com/)
+
+## Configuración del proyecto
+
+Sigue estos pasos para configurar y ejecutar el proyecto localmente.
+
+### 1. Clona el repositorio
+
+Primero, clona el repositorio en tu máquina local:
+
+```bash
+git clone https://github.com/Emerson-Torres/simpleapp.git
+cd tu-repositorio.
+
+## Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalado lo siguiente en tu máquina local:
+
+##- [Docker](https://www.docker.com/get-started)
+##- [Docker Compose](https://docs.docker.com/compose/install/)
+##- [Git](https://git-scm.com/)
+
+## Configuración del proyecto
+
+Sigue estos pasos para configurar y ejecutar el proyecto localmente.
+
+### 1. Clona el repositorio
+
+Primero, clona el repositorio en tu máquina local:
+
+
+git clone https://github.com/Emerson-Torres/simpleapp.git
+cd simpleapp
+
+###Ejecuta el siguiente comando para construir y levantar los contenedores:
+
+docker-compose up -d --build
+
+
+###Detener los contenedores:
+
+docker-compose down
+
+###Reconstruir los contenedores:
+
+docker-compose up -d --build
+
+
+simpeapp/
+├── app/                  # Lógica de la aplicación
+├── bootstrap/            # Archivos de inicialización
+├── config/               # Configuraciones de Laravel
+├── database/             # Migraciones y seeders
+├── docker/               # Configuraciones de Docker
+├── public/               # Archivos públicos (CSS, JS, imágenes)
+├── resources/            # Vistas y assets
+├── routes/               # Rutas de la aplicación
+├── storage/              # Archivos de almacenamiento
+├── tests/                # Pruebas automatizadas
+├── vendor/               # Dependencias de Composer
+├── .env.example          # Plantilla de variables de entorno
+├── .gitignore            # Archivos ignorados por Git
+├── docker-compose.yml    # Configuración de Docker Compose
+├── Dockerfile            # Configuración del contenedor de PHP
+├── README.md             # Este archivo
+└── composer.json         # Dependencias de PHP
